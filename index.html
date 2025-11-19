@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Bathara | Ngopi Santai, Bikin Hidup Penuh Warna Warni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Kedai Bathara</div>
+        <nav class="nav-links">
+            <button onclick="showPage('home')" id="nav-home">Beranda</button>
+            <button onclick="showPage('about')" id="nav-about">Tentang Kami</button>
+        </nav>
+    </header>
+
+    <main id="home" class="page active">
+        <h1>Ngopi Santai, Rasa Membangkitkan Badai</h1>
+        <p>Tempat ngopi terbaik dengan suasana vintage dan cita rasa kopi lokal Kediri.</p>
+        <button class="cta-button" onclick="showPage('menu')">Lihat Menu Kami</button>
+    </main>
+
+    <section id="menu" class="page">
+        <h2>📜 Menu Pilihan Kedai Bathara ☕</h2>
+
+        <div class="menu-category">
+            <h3>☕ Kopi Klasik & Kekinian</h3>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=11" alt="Americano" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Americano</div>
+                        <div class="item-desc">Espresso murni disajikan dengan air panas/dingin. Pilihan classic untuk pecinta kopi sejati.</div>
+                    </div>
+                    <div class="item-price" 
+                        onclick="openModal('Americano', 8000, 'Espresso murni disajikan dengan air panas/dingin. Pilihan classic untuk pecinta kopi sejati.', 'https://picsum.photos/80/80?random=11')">
+                        Rp 8.000
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=12" alt="Kopi Susu" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Kopi Susu</div>
+                        <div class="item-desc">Paduan espresso, susu, dan gula aren yang manis dan creamy. Sederhana, namun selalu nikmat.</div>
+                    </div>
+                    <div class="item-price" 
+                        onclick="openModal('Kopi Susu', 8000, 'Paduan espresso, susu, dan gula aren yang manis dan creamy. Sederhana, namun selalu nikmat.', 'https://picsum.photos/80/80?random=12')">
+                        Rp 8.000
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=13" alt="Kopi Susu Butter" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Kopi Susu Butter</div>
+                        <div class="item-desc">Kopi susu yang ditambah butter untuk rasa gurih. Wajib kalian coba!</div>
+                    </div>
+                    <div class="item-price" 
+                        onclick="openModal('Kopi Susu Butter', 12000, 'Kopi susu yang ditambah butter untuk rasa gurih. Wajib kalian coba!', 'https://picsum.photos/80/80?random=13')">
+                        Rp 12.000
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=14" alt="Vietnam Drip" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Vietnam Drip</div>
+                        <div class="item-desc">Kopi tubruk pekat khas Vietnam yang diteteskan perlahan, dicampur susu kental manis.</div>
+                    </div>
+                    <div class="item-price" 
+                        onclick="openModal('Vietnam Drip', 8000, 'Kopi tubruk pekat khas Vietnam yang diteteskan perlahan, dicampur susu kental manis.', 'https://picsum.photos/80/80?random=14')">
+                        Rp 8.000
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=15" alt="Kopi Susu O" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Kopi Susu O</div>
+                        <div class="item-desc">Racikan kopi susu otentik dengan resep rahasia Bathara. Lebih unik dan kuat rasanya.</div>
+                    </div>
+                    <div class="item-price" 
+                        onclick="openModal('Kopi Susu O', 9000, 'Racikan kopi susu otentik dengan resep rahasia Bathara. Lebih unik dan kuat rasanya.', 'https://picsum.photos/80/80?random=15')">
+                        Rp 9.000
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>🥛 Non-Kopi & Teh Segar</h3>
+
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=21" alt="Lychee Tea" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Lychee Tea</div>
+                        <div class="item-desc">Teh dengan rasa leci yang manis dan aroma buah yang menyegarkan.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Lychee Tea', 12000, 'Teh dengan rasa leci yang manis dan aroma buah yang menyegarkan.', 'https://picsum.photos/80/80?random=21')">Rp 12.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=22" alt="Lemon Tea" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Lemon Tea</div>
+                        <div class="item-desc">Teh dengan perasan lemon asli. Segar, asam, dan manis.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Lemon Tea', 12000, 'Teh dengan perasan lemon asli. Segar, asam, dan manis.', 'https://picsum.photos/80/80?random=22')">Rp 12.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=23" alt="Joshua" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Joshua</div>
+                        <div class="item-desc">Minuman soda dengan sirup dan sedikit perasan jeruk nipis.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Joshua', 7000, 'Minuman soda dengan sirup dan sedikit perasan jeruk nipis.', 'https://picsum.photos/80/80?random=23')">Rp 7.000</div>
+                </div>
+            </div>
+           <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=24" alt="Squash Melon" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Squash Melon</div>
+                        <div class="item-desc">Minuman *squash* rasa melon yang dingin dan menyegarkan.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Squash Melon', 10000, 'Minuman *squash* rasa melon yang dingin dan menyegarkan.', 'https://picsum.photos/80/80?random=24')">Rp 10.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=25" alt="Cokelat Panas/Dingin" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Cokelat Panas/Dingin</div>
+                        <div class="item-desc">Cokelat premium yang kental dan kaya rasa. Kenyamanan dalam setiap tegukan.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Cokelat Panas/Dingin', 12000, 'Cokelat premium yang kental dan kaya rasa. Kenyamanan dalam setiap tegukan.', 'https://picsum.photos/80/80?random=25')">Rp 12.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=26" alt="Matcha Latte" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Matcha Latte</div>
+                        <div class="item-desc">Teh hijau Jepang yang lembut, disajikan dengan susu creamy.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Matcha Latte', 14000, 'Teh hijau Jepang yang lembut, disajikan dengan susu creamy.', 'https://picsum.photos/80/80?random=26')">Rp 14.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=27" alt="Red Velvet" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Red Velvet</div>
+                        <div class="item-desc">Minuman *velvet* dengan rasa *cream cheese* yang unik dan warna merah memukau.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Red Velvet', 14000, 'Minuman *velvet* dengan rasa *cream cheese* yang unik dan warna merah memukau.', 'https://picsum.photos/80/80?random=27')">Rp 14.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=28" alt="Taro" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Taro</div>
+                        <div class="item-desc">Minuman ubi talas dengan rasa manis *earthy* dan warna ungu yang khas.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Taro', 13000, 'Minuman ubi talas dengan rasa manis *earthy* dan warna ungu yang khas.', 'https://picsum.photos/80/80?random=28')">Rp 13.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=29" alt="Cookies and Cream" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Cookies and Cream</div>
+                        <div class="item-desc">Minuman dengan campuran biskuit dan krim yang manis dan crunchy.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Cookies and Cream', 14000, 'Minuman dengan campuran biskuit dan krim yang manis dan crunchy.', 'https://picsum.photos/80/80?random=29')">Rp 14.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=30" alt="Banana Cream" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Banana Cream</div>
+                        <div class="item-desc">Minuman dengan perpaduan pisang dan krim yang lembut dan manis. Rasa yang unik dan menyegarkan.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Banana Cream', 13000, 'Minuman dengan perpaduan pisang dan krim yang lembut dan manis. Rasa yang unik dan menyegarkan.', 'https://picsum.photos/80/80?random=30')">Rp 13.000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>🍚 Makanan Berat & Camilan Pengisi Energi</h3>
+
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=41" alt="Nasi Bakar Ayam Suwir" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Nasi Bakar Ayam Suwir</div>
+                        <div class="item-desc">Nasi yang dibakar dengan daun pisang, berisi ayam suwir pedas. Aromanya menggugah selera.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Nasi Bakar Ayam Suwir', 15000, 'Nasi yang dibakar dengan daun pisang, berisi ayam suwir pedas. Aromanya menggugah selera.', 'https://picsum.photos/80/80?random=41')">Rp 15.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=42" alt="Nasi Telur Sambel" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Nasi Telur Sambel</div>
+                        <div class="item-desc">Nasi hangat dengan telur dadar/ceplok dan sambal pedas.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Nasi Telur Sambel', 13000, 'Nasi hangat dengan telur dadar/ceplok dan sambal pedas.', 'https://picsum.photos/80/80?random=42')">Rp 13.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=43" alt="Bakmi Asin" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Bakmi Asin</div>
+                        <div class="item-desc">Mie goreng dengan bumbu asin gurih, disajikan dengan bakso dan sayuran.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Bakmi Asin', 15000, 'Mie goreng dengan bumbu asin gurih, disajikan dengan bakso dan sayuran.', 'https://picsum.photos/80/80?random=43')">Rp 15.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=44" alt="Kentang Goreng" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Kentang Goreng</div>
+                        <div class="item-desc">Kentang goreng renyah disajikan dengan saus sambal dan mayonaise.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Kentang Goreng', 10000, 'Kentang goreng renyah disajikan dengan saus sambal dan mayonaise.', 'https://picsum.photos/80/80?random=44')">Rp 10.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=45" alt="Tahu Krispi" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Tahu Krispi</div>
+                        <div class="item-desc">Tahu yang digoreng hingga krispi, gurih dan nikmat.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Tahu Krispi', 10000, 'Tahu yang digoreng hingga krispi, gurih dan nikmat.', 'https://picsum.photos/80/80?random=45')">Rp 10.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=46" alt="Cireng Ayam Suwir" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Cireng Ayam Suwir</div>
+                        <div class="item-desc">Cireng dengan isian ayam suwir pedas, kenyal di luar, pedas di dalam.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Cireng Ayam Suwir', 10000, 'Cireng dengan isian ayam suwir pedas, kenyal di luar, pedas di dalam.', 'https://picsum.photos/80/80?random=46')">Rp 10.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=47" alt="Dimsum Mentai" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Dimsum Mentai</div>
+                        <div class="item-desc">Dimsum kukus dengan saus mentai yang dibakar sebentar.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Dimsum Mentai', 12000, 'Dimsum kukus dengan saus mentai yang dibakar sebentar.', 'https://picsum.photos/80/80?random=47')">Rp 12.000</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/80/80?random=48" alt="Tempe Mendoan" class="item-image">
+                <div class="item-content">
+                    <div class="item-info">
+                        <div class="item-name">Tempe Mendoan</div>
+                        <div class="item-desc">Tempe yang digoreng setengah matang dengan adonan tepung berbumbu.</div>
+                    </div>
+                    <div class="item-price" onclick="openModal('Tempe Mendoan', 10000, 'Tempe yang digoreng setengah matang dengan adonan tepung berbumbu.', 'https://picsum.photos/80/80?random=48')">Rp 10.000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="page">
+        <h2>🛠️ Tentang Kedai Bathara</h2>
+        <p>Kedai Bathara didirikan dengan semangat untuk menyajikan kopi lokal terbaik di Kediri. Nama "Bathara" diambil dari mitologi Jawa, melambangkan keagungan dan kualitas. Kami percaya bahwa setiap cangkir kopi harus memiliki cerita dan karakter. Dengan suasana vintage yang hangat, kami mengundang Anda untuk bersantai, menikmati setiap tegukan, dan merasa seperti di rumah sendiri.</p>
+        <p>Kami berkomitmen menggunakan bahan-bahan segar, mulai dari biji kopi pilihan hingga rempah-rempah asli. Baik Anda mencari tempat untuk bekerja, bertemu teman, atau sekadar me-time, Kedai Bathara adalah pilihan yang tepat. Selamat datang di kedai kami!</p>
+    </section>
+
+    <footer class="footer">
+        &copy; 2025 Kedai Bathara. Dibuat dengan semangat 45 | Alamat: Jl. Jaka Mudai No. 22, Kota Kediri.
+    </footer>
+
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h3 id="modal-item-name">Nama Barang</h3>
+            <img id="modal-item-image" src="" alt="Gambar Menu" class="modal-image">
+            
+            <div class="modal-details">
+                <p id="modal-item-desc">Deskripsi Barang...</p>
+                <p class="modal-price">Harga Satuan: <strong id="modal-item-price-display">Rp 0</strong></p>
+            </div>
+
+            <div class="quantity-control">
+                <h4>Pilih Jumlah:</h4>
+                <div class="qty-box">
+                    <button onclick="changeQuantity(-1)">-</button>
+                    <input type="number" id="item-quantity" value="1" min="1" readonly>
+                    <button onclick="changeQuantity(1)">+</button>
+                </div>
+            </div>
+
+            <hr> 
+            <div class="modal-footer-summary">
+                <p>Total Harga: <strong id="modal-total-price">Rp 0</strong></p>
+                <button class="order-button" onclick="addToCart()">🛒 Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
